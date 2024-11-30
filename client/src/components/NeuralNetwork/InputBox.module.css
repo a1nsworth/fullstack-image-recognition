@@ -1,0 +1,35 @@
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.input {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #4b6b8c;
+    border-radius: 8px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #00f7b1;
+    background-color: #444;
+}
+
+.input::placeholder {
+    color: #bbb;
+}
+
+.inputGroup input {
+    animation: pulse 2s infinite;
+}

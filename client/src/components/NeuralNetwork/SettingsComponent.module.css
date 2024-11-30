@@ -1,0 +1,219 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.inputGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-out;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00f7b1;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeIn 1s ease-out;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.input {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #4b6b8c;
+    border-radius: 8px;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #00f7b1;
+}
+
+.activationInfo {
+    margin-top: 10px;
+    font-family: 'Courier New', monospace;
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+.formula {
+    font-size: 1.5rem;
+    color: #00f7b1;
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.startBtn {
+    padding: 15px 25px;
+    background-color: #00f7b1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.startBtn:hover {
+    background-color: #02e3a1;
+    transform: scale(1.05);
+}
+
+.startBtn:active {
+    transform: scale(0.95);
+}
+
+.uploadedImage {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #00f7b1;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ddd;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .input {
+        font-size: 1rem;
+    }
+
+    .startBtn {
+        font-size: 1rem;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.clearBtn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clearBtn:hover {
+    background-color: #d32f2f;
+}
+
+/* Стили для рисования */
+.drawingArea {
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-out;
+}
+
+.canvas {
+    border: 2px solid #ccc;
+    background-color: #fff; /* Установлен белый цвет фона */
+    display: block;
+    margin: 16px auto;
+    cursor: crosshair;
+    width: 128px; /* Ограничение по размеру */
+    height: 128px; /* Ограничение по размеру */
+}
